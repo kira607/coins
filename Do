@@ -1,0 +1,12 @@
+# To link <make -f Do>
+# To clear <make -f Do clear>
+
+OBJ = main.o privet.o stat.o rec.o menu.o addc.o delc.o about.o
+
+all: $(OBJ)
+	gcc -o coins $(OBJ)
+	
+$(OBJ): f.h
+
+clear: 
+	rm $(OBJ)
